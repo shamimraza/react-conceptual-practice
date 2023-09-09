@@ -1,6 +1,7 @@
 
 import './App.css'
 import Card from './components/Card';
+import PropsDilling from './components/propsDilling/PropsDilling';
 import ProductList from './usestate/ProductList';
 import UseState from './usestate/UseState';
 import UseState1 from './usestate/UseState1';
@@ -54,6 +55,7 @@ function App() {
       <UseState></UseState>
       <UseState1></UseState1>
       <ProductList></ProductList>
+      <PropsDilling></PropsDilling>
     </>
   )
 }
