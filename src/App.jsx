@@ -1,6 +1,9 @@
 
 import './App.css'
 import Card from './components/Card';
+import ProductList from './usestate/ProductList';
+import UseState from './usestate/UseState';
+import UseState1 from './usestate/UseState1';
 
 
 function App() {
@@ -36,17 +39,21 @@ function App() {
     },
   ];
 
-  // console.log(humans);
-
-
   return (
     <>
       <h2 className='lg:text-3xl my-8 md:text-2xl font-bold'><span className='bg-blue-500 p-3 text-white rounded'>Well come react</span></h2>
       <div className='grid lg:grid-cols-3 gap-3 md:grid-cols-1'>
         {
-          humans.map(item => <Card item={item}></Card>)
+          humans.map(item =>
+            <Card
+              item={item}
+              key={item.id}>
+            </Card>)
         }
       </div>
+      <UseState></UseState>
+      <UseState1></UseState1>
+      <ProductList></ProductList>
     </>
   )
 }
